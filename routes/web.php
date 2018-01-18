@@ -19,4 +19,9 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/users', 'UserSettings\UsersController@index')->name('users');
+Route::get('/users', 'UserSettings\UsersController@index')->name('users.index');
+Route::put('/users/{id}', 'UserSettings\UsersController@update')->name('users.update');
+
+Route::get('/calculadoras/rm', 'Calculators\RmController@index')->name('calculadoraRm');
+Route::get('/calculadoras/wilks', 'UserSettings\WilksController@index')->name('calculadoraWilks');
+Route::get('/calculadoras/imc', 'UserSettings\IcmpController@index')->name('calculadoraImc');

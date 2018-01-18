@@ -1,12 +1,11 @@
 <?php
 
-namespace App\Http\Controllers\UserSettings;
+namespace App\Http\Controllers\Calculators;
 
-use App\User;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
-class UsersController extends Controller
+class WilksController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,8 +14,7 @@ class UsersController extends Controller
      */
     public function index()
     {
-        $users=User::all();
-        return view('users.index', compact('users'));
+        //
     }
 
     /**
@@ -32,7 +30,7 @@ class UsersController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param  \Illuminate\Http\Request $request
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
@@ -43,18 +41,18 @@ class UsersController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  int  $id
+     * @param  int $id
      * @return \Illuminate\Http\Response
      */
-    public function show(user $user)
+    public function show($id)
     {
-        return view('users.index', compact('user'));
+        //
     }
 
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  int  $id
+     * @param  int $id
      * @return \Illuminate\Http\Response
      */
     public function edit($id)
@@ -65,29 +63,19 @@ class UsersController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
+     * @param  \Illuminate\Http\Request $request
+     * @param  int $id
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, $id)
     {
-        $user = User::find($id);
-        //dump($user);
-        $user->update($request->all());
-        $user->password = bcrypt($request->get("password"));
-        $user->save();
-        //dump($request->all());
-        $users = User::all();
-        return view('users.index', compact('users'));
-
-
-
+        //
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param  int  $id
+     * @param  int $id
      * @return \Illuminate\Http\Response
      */
     public function destroy($id)

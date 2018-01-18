@@ -9,6 +9,9 @@ require('./bootstrap');
 
 window.Vue = require('vue');
 
+import VueMaterial from 'vue-material';
+
+Vue.use(VueMaterial);
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
@@ -16,6 +19,10 @@ window.Vue = require('vue');
  */
 
 Vue.component('example-component', require('./components/ExampleComponent.vue'));
+
+Vue.component('card-component', require('./components/CardComponent.vue'));
+Vue.component('scrollbar-component', require('./components/ScrollBarComponent.vue'));
+Vue.component('HomeForm-component', require('./components/HomeFormComponent.vue'));
 
 const app = new Vue({
     el: '#app'
