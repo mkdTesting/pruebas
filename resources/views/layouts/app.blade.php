@@ -35,8 +35,8 @@
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href='{{route('calculadoraRm')}}'>Calcular RM</a>
-                            <a class="dropdown-item" href=''>Calcular puntos WILKS</a>
-                            <a class="dropdown-item" href=''>Calculadora IMC</a>
+                            <a class="dropdown-item" href='{{route('calculadoraWilks')}}'>Calcular puntos WILKS</a>
+                            <a class="dropdown-item" href='{{route('calculadoraImc')}}'>Calculadora IMC</a>
 
                     </li>
                     <li class="nav-item dropdown">

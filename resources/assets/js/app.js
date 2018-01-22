@@ -23,6 +23,9 @@ Vue.component('example-component', require('./components/ExampleComponent.vue'))
 Vue.component('card-component', require('./components/CardComponent.vue'));
 Vue.component('scrollbar-component', require('./components/ScrollBarComponent.vue'));
 Vue.component('HomeForm-component', require('./components/HomeFormComponent.vue'));
+Vue.component('rm-form', require('./components/RMformComponent'));
+Vue.component('wilks-form', require('./components/WilksformComponent'));
+Vue.component('icmp-form', require('./components/IcmpFormComponent'));
 
 const app = new Vue({
     el: '#app'

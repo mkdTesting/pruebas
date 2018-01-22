@@ -14,7 +14,7 @@ class RmController extends Controller
      */
     public function index()
     {
-        echo 'hola';
+        return (view('calculadoras/rm'));
     }
 
     /**
