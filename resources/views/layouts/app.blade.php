@@ -37,6 +37,7 @@
                             <a class="dropdown-item" href='{{route('calculadoraRm')}}'>Calcular RM</a>
                             <a class="dropdown-item" href='{{route('calculadoraWilks')}}'>Calcular puntos WILKS</a>
                             <a class="dropdown-item" href='{{route('calculadoraImc')}}'>Calculadora IMC</a>
+                        </div>
 
                     </li>
                     <li class="nav-item dropdown">
@@ -48,7 +49,7 @@
                             <a class="dropdown-item" href="#">rutina1</a>
                             <a class="dropdown-item" href="#">rutina2</a>
                             <a class="dropdown-item" href="#">rutina3</a>
-
+                        </div>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href='{{route('users.index')}}'>Users</a>

@@ -3,12 +3,12 @@
         <div id="entrada">
             <md-field>
                 <label for="repes">REPES</label>
-                <md-input id="repes" name="first-name" v-model="selectedRepetitions"/>
+                <md-input id="repes" name="first-name" @keyup.enter="RM" v-model="selectedRepetitions"/>
             </md-field>
 
             <md-field>
                 <label for="peso">PESO</label>
-                <md-input id="peso" name="peso" v-model="selectedweigth"/>
+                <md-input id="peso" name="peso" @keyup.enter="RM" v-model="selectedweigth"/>
             </md-field>
         </div>
         <button class="btn btn-primary" @click="RM">calcular</button>
